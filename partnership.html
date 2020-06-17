@@ -1,0 +1,319 @@
+<html>
+<head>
+        <link rel='stylesheet' href='gst.css'>
+        <script src='jquery-3.3.1/jquery-3.3.1.js'></script>
+    
+        <script type="text/javascript">
+            
+            $(document).ready(function(){
+            
+                $("#tab_header").addClass('tab_header1');
+                $("#aaa").addClass('button_back');
+                var pos = $("#tab_header").position().top;
+
+            setInterval(function(){
+                var sc = $(document).scrollTop();
+                if(sc >= pos + 10)
+                    {
+                        $("#tab_header").addClass('tab_header');
+                       
+                    }else if(sc < pos + 10)
+                        {
+                            $("#tab_header").removeClass('tab_header');
+                        }
+            },100);  
+                
+                $("#aaa").click(function()
+                               {
+                    $("#data").css('right','0%');
+                    $("#aaa").addClass('button_back');
+                    $("#bbb").removeClass('button_back');
+                    $("#ccc").removeClass('button_back');
+                    $("#ddd").removeClass('button_back');
+                });
+                
+                $("#bbb").click(function()
+                               {
+                    $("#data").css('right','100%');
+                    $("#bbb").addClass('button_back');
+                    $("#ccc").removeClass('button_back');
+                    $("#ddd").removeClass('button_back');
+                    $("#aaa").removeClass('button_back');
+                });
+                
+                $("#ccc").click(function()
+                               {
+                    $("#data").css('right','200%');
+                    $("#ccc").addClass('button_back');
+                    $("#ddd").removeClass('button_back');
+                    $("#aaa").removeClass('button_back');
+                    $("#bbb").removeClass('button_back');
+                });
+                
+                $("#ddd").click(function()
+                               {
+                    $("#data").css('right','300%');
+                    $("#ddd").addClass('button_back');
+                    $("#aaa").removeClass('button_back');
+                    $("#bbb").removeClass('button_back');
+                    $("#ccc").removeClass('button_back');
+                });                
+        });
+    
+    </script>    
+    </head>
+    <body id="body">
+    
+        <div style="height:100%;width:100%;background-color:yell">
+            <div id='header'>
+            <div id='logo_container'><Image src="images/nps.png" height='100%' width='100%'></Image></div>
+            
+            <div id='extra_header'>
+                <div id='mail_info'>
+                    <div style="display: inline-block;height:100%;width:15%;background-color: yellow">
+                    <Image src="images/nps.png" height='100%' width='100%'></Image>
+                    </div>
+                    <h5 style="float: right;margin: 0px;padding-top: 10px">souravsingh2626@gmail.com</h5>
+                
+                </div>
+                <div id="contact_info">
+                    <div style="display: inline-block;height:100%;width:15%;background-color: yellow;float: left">
+                    <Image src="images/nps.png" height='100%' width='100%'></Image>
+                    </div>
+                    <h5 style="float: right;margin: 0px;padding-top: 10px">souravsingh2626@gmail.com</h5>                
+                </div>
+            </div>
+            
+            <div id='marquee'><marquee direction="left" scrollamount="3" scrolldelay="2">Accuracy and Punctuality is the motto of our organisation.There are no secret to success,it's the result of preparation,hard work and learning from failure.</marquee></div>
+        </div>
+            
+            
+        <div id='tab_header'>
+            
+            <ul id='list'>
+                <a href="home.html"><li><div id='home'>Home</div></li></a>
+                <li><div id='company_registration'>Company Registration</div>
+                    <div id="company_registration_list">
+                    <ul><br/>
+                        <a href="gst_test.html"><li>>GST Registration</li></a><hr>
+                        <a href="serv_tax_reg.html"><li>>Service Tax Registration</li></a><hr>
+                        <a href="vat_tin_reg.html"><li>>VAT-TIN Registration</li></a><hr>
+                        <a href="esi_reg.html"><li>>ESI Registration</li></a><hr>
+                        <a href="msme_reg.html"><li>>MSME Registration</li></a><hr>
+                        <a href="tan_reg.html"><li>>TAN Registration</li></a><hr>
+                        <a href="prof_tax_reg.html"><li>>Professional Tax Registration</li></a><hr>
+                        <a href="trade_mark_reg.html"><li>>Trade Mark Registration</li></a><hr>
+                        <a href="patent_reg.html"><li>>Patent Registration</li></a><hr>
+                        <a href="fssai_reg.html"><li>>FSSAI Registration</li></a><hr><br>
+                        </ul>
+                    
+                    </div>
+                
+                </li>
+                
+                
+                <li><div id='start_bussiness'>Start A Bussiness</div>
+                    <div id="start_bussiness_list"><ul><br/>
+                        <a href="properits.html"><li>>Proprietorship</li></a><hr>
+                        <a href="partnership.html"><li>>Partership</li></a><hr>
+                        <a href="lim_liab_part.html"><li>>Limited Liability Partnership</li></a><hr>
+                        <a href="one_person_cmpny.html"><li>>One Person Company</li></a><hr>
+                        <a href="priv_lim_cmpny.html"><li>>Private Limited Company</li></a><hr>
+                        <a href="pub_lim_cmpny.html"><li>>Public Limited Company</li></a><hr><br/>
+                        </ul></div>
+                
+                </li> 
+                <a href="manage.html"><li><div id='manage_bussiness'>Manage Bussiness</div></li></a>
+            </ul>
+       
+        </div>
+            
+    <div id='img_container'>
+                
+                <div style="width:100%;height: 95%">
+                    <div id="img_content" style="display: inline-block;width:40%">
+                       <div style="height:10%;width:70%;text-align: center;margin: 150 0 10 60">
+                            <h4 style="margin: 0px;padding:0 20 0 20">Register a Partnership</h4>
+                        </div>
+                <div id="img_cont_subpage">
+                <div style="height: 100%;width:5%;opacity: 0.7;background-color: red;border-left: 5 px solid black"></div>
+                
+                <p style="float:right;font-size: 16;display: inline-block;line-height: 1.2;padding-left: 25;font-family:cursive"><i> Partnership could be registered or unregistered. Partnerships are ideal for small business in the unorganized sector having multiple promoters. KPNJ offers partnership registration from Rs.1900 </i></p>
+                
+                </div>
+                    </div>
+                    <div id="img_content" style="display: inline-block;background-image: url(images/sub_pagebg.png);background-size: contain;width:25%"></div>
+                    <div id="img_content" style="display: inline-block"></div>
+        
+                </div>
+           
+            </div>
+            
+            <div id="content" style="height: 180%">
+                    
+                    <div style="height:6%;width:70%;margin:15 0 35 40;padding-left: 340">
+                    <h1>ADVANTAGES OF PARTNERSHIP</h1>
+                </div>
+      
+                <div style="height: 32%;width: 100%;margin-bottom: 10">
+             
+                <div style="height:90%;width:28%;display: inline-block;border: 0.5px solid grey;margin-left:35;margin-right: 35;text-align: center">
+                 <div style="background-color: aqua;height:20%;width:30%;margin:-8 0 0 -8;display: inline-block"><Image src="images/nps.png" height='100%' width='100%'></Image></div>
+                    <h3><i>Easy to Start</i></h3>
+                    <div style="margin:10 30 10 30"><h5>A Partnership is easy to form as no cumbersome legal formalities are involved. Its registration is also not essential. However, if the firm is not registered, it will be deprived of certain legal benefits. The Registrar of Firms is responsible for registering partnership firms.</h5></div>
+                    
+                </div>
+          
+                <div style="height:90%;width:28%;border:0.5px solid grey;display: inline-block;float: right;margin-left: 35;margin-right: 30;text-align:center">
+              <div style="background-color: aqua;height:20%;width:30%;margin:-8 0 0 -8;display: inline-block"><Image src="images/nps.png" height='100%' width='100%'></Image></div>
+                     <h3><i>Business Name</i></h3>
+                    <div style="margin:10 30 10 30"><h5>Since the name of a Partnership firm is not registered, a Partnership firm can choose to have any name - as long as it does not infringe on a registered trademark. However, since the name is not registered, any other person can also use the same business name unless trademark registration is obtained. </h5></div>
+                </div>
+                <div style="height:90%;width:28%;border:0.5px solid grey;display: inline-block;float:right;margin-left: 35;margin-right:35;text-align:center">
+                 <div style="background-color: aqua;height:20%;width:30%;margin:-8 0 0 -8;display: inline-block"><Image src="images/nps.png" height='100%' width='100%'></Image></div>       
+                  <h3><i>Annual Filing NOT Required</i></h3>
+                    <div style="margin:10 30 10 30"><h5>A Partnership firm is not required to file its annual accounts with the Registrar each year unlike a Limited Liability Partnership or Company. Limited Liability Partnership's and Companies are required to file their annual accounts with Registrar of Companies each year.</h5></div>        
+                </div>
+        </div>                
+                        
+               <div style="width:40%;margin:30 0 60 400;height:6%;text-align: center;padding-top: 10">
+                
+                <h1>Add <b>On</b> Services</h1>
+                </div>
+                
+                 <div style="width:85%;margin: 40 0 30 100;height:15%;display: flex;flex-direction: row;text-align: center;padding: 0px">
+                    <div  id="add_on_service1">
+                        <div id="add_on_service2">
+                            <h3 style="margin: 0">GST-Migration</h3>
+                        </div>
+                        <div style="width:100%;height:70%;padding-top: 20">
+                            <h2 style="margin: 0;">Rs 1999/-</h2>
+                            <h2 style="font-size: 14px">1 Days</h2>
+                        </div>
+                     </div>
+            
+                   <div  id="add_on_service1">
+                      <div id="add_on_service2">
+                            <h3 style="margin: 0">VAT & CST Registration</h3>
+                        </div>
+                        <div style="width:100%;height:70%;padding-top: 20">
+                            <h2 style="margin: 0;">Rs 8999/-</h2>
+                            <h2 style="font-size: 14px">10 Days</h2>
+                        </div>
+                     </div>
+                     
+                   <div  id="add_on_service1">
+                      <div id="add_on_service2">
+                            <h3 style="margin: 0">Service Tax Registration</h3>
+                        </div>
+                        <div style="width:100%;height:70%;padding-top: 20">
+                            <h2 style="margin: 0;">Rs 3499/-</h2>
+                            <h2 style="font-size: 14px">3 Days</h2>
+                        </div>
+                     </div>
+                     
+                   <div  id="add_on_service1">
+                      <div id="add_on_service2">
+                            <h3 style="margin: 0">Import Export Code Number</h3>
+                        </div>
+                        <div style="width:100%;height:70%;padding-top: 20">
+                            <h2 style="margin: 0;">Rs 5999/-</h2>
+                            <h2 style="font-size: 14px">1 Days</h2>
+                        </div>
+                     </div>                     
+        
+                </div>
+                
+                
+                 <div style="width:85%;margin:60 0 10 100;height:15%;display: flex;flex-direction: row;text-align: center">
+                    <div  id="add_on_service1">
+                      <div id="add_on_service2">
+                            <h3 style="margin: 0">Copyright Registration</h3>
+                        </div>
+                        <div style="width:100%;height:70%;padding-top: 20">
+                            <h2 style="margin: 0;">Rs 4999/-</h2>
+                            <h2 style="font-size: 14px">4 Days</h2>
+                        </div>
+                     </div>
+            
+                   <div  id="add_on_service1">
+                      <div id="add_on_service2">
+                            <h3 style="margin: 0">Trademark Brand/Logo</h3>
+                        </div>
+                        <div style="width:100%;height:70%;padding-top: 20">
+                            <h2 style="margin: 0;">Rs 5999/-</h2>
+                            <h2 style="font-size: 14px">2 Days</h2>
+                        </div>
+                     </div>
+                     
+                   <div  id="add_on_service1">
+                      <div id="add_on_service2">
+                            <h3 style="margin: 0">ESI/PF Registration</h3>
+                        </div>
+                        <div style="width:100%;height:70%;padding-top: 20">
+                            <h2 style="margin: 0;">Rs 4999/-</h2>
+                            <h2 style="font-size: 14px">7 Days</h2>
+                        </div>
+                     </div>
+                     
+                   <div  id="add_on_service1">
+                      <div id="add_on_service2">
+                            <h3 style="margin: 0">Project Report Loan</h3>
+                        </div>
+                        <div style="width:100%;height:70%;padding-top: 20">
+                            <h2 style="margin: 0;">Rs 9999/-</h2>
+                            <h2 style="font-size: 14px">3 Days</h2>
+                        </div>
+                     </div>                     
+        
+                </div>                
+                
+            
+            </div>
+            
+        <hr>
+    <div id='footer'>
+                        <div style="height:90%;width:23%;display: inline-block;margin:12;
+                            text-align: center;">
+                            <div style="height:20%;width:50%;background-color:red;display: inline-block;">
+                    <Image src="images/nps.png" height='100%' width='100%'></Image>
+                    </div>
+                          <div style="margin:10 30 10 30;line-height: 2">  <h5>  KNJP is a group of highly trained experts having solution to all your day-to-day business needs. It can play a profound role in increasing the efficiency of your business. It’s a lucrative platform where we can work together with you to assist you in achieving your business goals</h5></div>
+                </div>
+                <div style="height:90%;width:23%;display: inline-block;float: right;margin:12;text-align: center;line-height: 1.8">
+                    <h2>Get In Touch</h2>
+                    <h5>
+                    307, Pooja Complex , 22 Veer Sawarkar <br/>Block,Nirman Vihar, Metro Piller <br/>59,Laxmi Nagar, Near Rajeeve Watch<br/> Gali, Delhi-110092.<br/><br/>
+                    +91-8376888537, 011-42657651<br/><br/>
+                    kpnj.india@gmail.com<br/><br/>
+                    info@kpnjindia.com 
+                    </h5>
+                </div>
+                <div style="height:90%;width:23%;display: inline-block;float:right;margin: 12;text-align: center">
+                    <h2>INFORMATION</h2>
+                    <ul id="information">
+                        <li>>Home</li><br/>
+                        <li>>About us</li><br/>
+                        <li>>Contact us</li><br/>
+                        <li>>Terms & Condition</li><br/>
+                        <li>>Privacy Policy</li><br/>
+                        <li>>Faq</li>
+                    </ul>
+                </div>
+              <div style="height:90%;width:23%;display: inline-block;float:right;margin: 12;
+                          text-align: center">
+                  <h2>QUICK LINK</h2>
+                  <ul id='quick_link'>
+                      <li>>Mudra Loan Assistant</li><br/>
+                      <li>>Project Report For Loan</li><br/>
+                      <li>>Private Limited Company</li><br/>
+                      <li>>MSME Registration</li><br/>
+                      <li>>Trade Mark Registration</li><br/>
+                      <li>>FSSAI Registration</li><br/>
+                      <li>>ESI Registration</li>
+                  </ul>
+                </div>
+        </div>            
+        </div>
+    </body>
+</html>
